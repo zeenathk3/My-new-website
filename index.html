@@ -1,69 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      line-height: 1.6;
-    }
-    .buttons {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    img {
-      max-width: 300px;
-      margin: 10px 0;
-      border-radius: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Artificial Intelligence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
 </head>
+
 <body>
 
-  <h1>Welcome to My Website</h1>
+    <h1>Artificial Intelligence</h1>
 
-  <p>Hello! This is a sample paragraph. You can write anything here about your website, services, or yourself.</p>
+    <label>What is Artificial Intelligence?</label>
+    <button onclick="alert('AI is the simulation of human intelligence by machines.')">
+        Learn AI
+    </button>
 
-  <img src="https://via.placeholder.com/300" alt="Sample Image">
+    <label>Applications of AI</label>
+    <button onclick="alert('AI is used in healthcare, education, robotics, and business.')">
+        AI Uses
+    </button>
 
-  <div class="buttons">
-    <!-- Button 1: Alert -->
-    <button onclick="showAlert()">🔔 Alert</button>
-
-    <!-- Button 2: Open Link -->
-    <button onclick="openLink()">🌐 Visit Website</button>
-
-    <!-- Button 3: Toggle Text -->
-    <button onclick="toggleText()">📝 Toggle Text</button>
-  </div>
-
-  <!-- Hidden text for toggle button -->
-  <p id="hiddenText" style="display:none;">Hello! You toggled me!</p>
-
-  <script>
-    function showAlert() {
-      alert("This is an alert from your button!");
-    }
-
-    function openLink() {
-      window.open("https://www.example.com", "_blank");
-    }
-
-    function toggleText() {
-      const text = document.getElementById("hiddenText");
-      text.style.display = text.style.display === "none" ? "block" : "none";
-    }
-  </script>
+    <p>
+        Artificial Intelligence (AI) is a branch of computer science that focuses on 
+        creating smart machines capable of performing tasks that normally require 
+        human intelligence, such as learning, problem-solving, and decision-making.
+    </p>
 
 </body>
 </html>
